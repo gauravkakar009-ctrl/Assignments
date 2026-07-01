@@ -1,6 +1,7 @@
 // Store all the transactions in Array
 const transactions : number[] = [50000, -2000, 3000, -15000, -200, -300, 4000, -3000]
 
+let totalTransactions : number = 0;
 
 for(let amount of transactions){
 
@@ -9,9 +10,10 @@ for(let amount of transactions){
     }else {
         console.log("Debit: " +amount)
     }
+    totalTransactions++;
 }
 
-
+console.log(totalTransactions);
 // Print total Credited and debited amount
 
 let totalCredit : number = 0;
