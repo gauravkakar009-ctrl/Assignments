@@ -1,22 +1,19 @@
 const paragraph : string = "Java is a popular programming language. Java is used for web development, mobile applications, and more.";
-const word : string = "Java";
-let splittedParagraph : string[] = paragraph.split(" ");
-console.log(splittedParagraph);
+const words : string[] = paragraph.split(" ");
 
 let count : number = 0;
-let indexes : number[] = [];
 
-let index : number = splittedParagraph.indexOf(word);
+for(let i : number =0; i <=words.length; i++){
 
-while(index !== -1){
-    count++;
-    indexes.push(index);
-
-    index = splittedParagraph.indexOf(word, index + word.length);
+    if(words[i]?.toLowerCase() === "java"){
+        console.log("Java word is present with Index: " + i);
+        count++;
+    }
 }
 
-console.log("Total Occurrences:", count);
-console.log("Indexes:", indexes);
+console.log("Total words with java are: " + count);
+
+
 
 
 

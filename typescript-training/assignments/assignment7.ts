@@ -24,7 +24,7 @@ let finalResult : string = "";
 
 for(let i = 0; i < upperCaseWord.length; i++){
 
-    finalResult += upperCaseWord[i].charAt(0).toUpperCase() + upperCaseWord[i].slice(1) + " ";
+    finalResult += upperCaseWord[i]!.charAt(0).toUpperCase() + upperCaseWord[i]!.slice(1) + " ";
 }
 
 console.log(finalResult);
